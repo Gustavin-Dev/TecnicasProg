@@ -1,15 +1,13 @@
 package JavaLar;
 
-public abstract class  Astros {
-		int posicaoX;
-		int posicaoY;
-		protected Astros(int X,int Y) {
+public abstract class Astros {
+	
+		protected int posicaoX;
+		protected int posicaoY;
+	
+		public Astros(int X,int Y) {
 			posicaoX = X;
 			posicaoY = Y;
 		}
-		
 
-		
-		
-		
 }
