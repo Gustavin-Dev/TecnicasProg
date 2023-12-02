@@ -9,6 +9,7 @@ public class JavaScript extends Planetas {
 
 	{
 		setVelDeslocamento(3);
+		setStatus(true);
 		setLimiteminX(5);
 		setLimitemaxX(9);
 		setLimiteminY(5);

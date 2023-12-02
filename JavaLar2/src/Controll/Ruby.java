@@ -7,6 +7,7 @@ public class Ruby extends Planetas {
 
 	{
 		setVelDeslocamento(2);
+		setStatus(true);
 		setLimiteminX(4);
 		setLimitemaxX(10);
 		setLimiteminY(4);

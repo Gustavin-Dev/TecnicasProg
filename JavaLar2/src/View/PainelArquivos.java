@@ -15,9 +15,8 @@ import javax.swing.JPanel;
 public class PainelArquivos extends JFrame{
 
 	JFrame painel;
-	private int AE = 0;
 	
-	public PainelArquivos() {
+	public PainelArquivos(PainelBotoes painelBotoes) {
 		painel = new JFrame();
 		painel.setSize(700,300);
 		painel.setLocationRelativeTo(null);
@@ -51,50 +50,57 @@ public class PainelArquivos extends JFrame{
 		
 		AE_10.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	AE=10;
-            	JOptionPane.showMessageDialog(null, "arquivo selecionado!");
+            	painelBotoes.setArquivoDeInstanteSelecionado(10);
+            	painelBotoes.Controlador.InstanciarLeituraArquivo(painelBotoes.getArquivoDeInstanteSelecionado());
+            	JOptionPane.showMessageDialog(null, "arquivo selecionado!","selecao sucedida", JOptionPane.INFORMATION_MESSAGE);
             }
          });
 		
 		AE_50.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	AE=50;
-            	JOptionPane.showMessageDialog(null, "arquivo selecionado!");
+            	painelBotoes.setArquivoDeInstanteSelecionado(50);
+            	painelBotoes.Controlador.InstanciarLeituraArquivo(painelBotoes.getArquivoDeInstanteSelecionado());
+            	JOptionPane.showMessageDialog(null, "arquivo selecionado!","selecao sucedida", JOptionPane.INFORMATION_MESSAGE);
             }
          });
 		
 		AE_100.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	AE=100;
-            	JOptionPane.showMessageDialog(null, "arquivo selecionado!");
+            	painelBotoes.setArquivoDeInstanteSelecionado(100);
+            	painelBotoes.Controlador.InstanciarLeituraArquivo(painelBotoes.getArquivoDeInstanteSelecionado());
+            	JOptionPane.showMessageDialog(null, "arquivo selecionado!","selecao sucedida", JOptionPane.INFORMATION_MESSAGE);
             }
          });
 		
 		AE_500.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	AE=500;
-            	JOptionPane.showMessageDialog(null, "arquivo selecionado!");
+            	painelBotoes.setArquivoDeInstanteSelecionado(500);
+            	painelBotoes.Controlador.InstanciarLeituraArquivo(painelBotoes.getArquivoDeInstanteSelecionado());
+            	JOptionPane.showMessageDialog(null, "arquivo selecionado!","selecao sucedida", JOptionPane.INFORMATION_MESSAGE);
             }
          });
 		
 		AE_1000.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	AE=1000;
-            	JOptionPane.showMessageDialog(null, "arquivo selecionado!");
+            	painelBotoes.setArquivoDeInstanteSelecionado(1000);
+            	painelBotoes.Controlador.InstanciarLeituraArquivo(painelBotoes.getArquivoDeInstanteSelecionado());
+            	JOptionPane.showMessageDialog(null, "arquivo selecionado!","selecao sucedida", JOptionPane.INFORMATION_MESSAGE);
             }
          });
 		
 		AE_1500.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	AE=1500;
-            	JOptionPane.showMessageDialog(null, "arquivo selecionado!");
+            	painelBotoes.setArquivoDeInstanteSelecionado(1500);
+            	painelBotoes.Controlador.InstanciarLeituraArquivo(painelBotoes.getArquivoDeInstanteSelecionado());
+            	JOptionPane.showMessageDialog(null, "arquivo selecionado!","selecao sucedida", JOptionPane.INFORMATION_MESSAGE);
             }
          });
 		
 		AE_2000.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	AE=2000;
-            	JOptionPane.showMessageDialog(null, "arquivo selecionado!");
+            	painelBotoes.setArquivoDeInstanteSelecionado(2000);
+            	painelBotoes.Controlador.InstanciarLeituraArquivo(painelBotoes.getArquivoDeInstanteSelecionado());
+            	JOptionPane.showMessageDialog(null, "arquivo selecionado!","selecao sucedida", JOptionPane.INFORMATION_MESSAGE);
             }
          });
 		
@@ -105,8 +111,5 @@ public class PainelArquivos extends JFrame{
 		
 		painel.add(paineldentro);
 		
-	}
-	public int getAE() {
-		return AE;
 	}
 }

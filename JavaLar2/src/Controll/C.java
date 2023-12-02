@@ -8,6 +8,7 @@ public class C extends Planetas {
 
 	{
 		setVelDeslocamento(10);
+		setStatus(true);
 		setLimiteminX(0);
 		setLimitemaxX(14);
 		setLimiteminY(0);

@@ -7,6 +7,7 @@ public class CplusPlus extends Planetas {
 
 	{
 		setVelDeslocamento(2);
+		setStatus(true);
 		setLimiteminX(1);
 		setLimitemaxX(13);
 		setLimiteminY(1);

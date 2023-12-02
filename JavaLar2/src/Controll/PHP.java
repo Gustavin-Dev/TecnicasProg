@@ -7,6 +7,7 @@ public class PHP extends Planetas {
 
 	{
 		setVelDeslocamento(2);
+		setStatus(true);
 		setLimiteminX(3);
 		setLimitemaxX(11);
 		setLimiteminY(3);

@@ -4,6 +4,7 @@ public class Planetas extends Astros{
 	
 	private String 	 Nome;
 	private int 	 velDeslocamento;
+	private boolean  status;
 	private int 	 limitemaxX;
 	private int 	 limiteminX;
 	private int 	 limitemaxY;
@@ -22,6 +23,17 @@ public class Planetas extends Astros{
 		this.Nome = nome;
 }
 	
+	
+	
+	
+	public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+
 	public int getBugsColididos() {
 		return bugsColididos;
 	}

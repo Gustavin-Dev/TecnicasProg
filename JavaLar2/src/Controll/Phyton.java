@@ -8,6 +8,7 @@ public class Phyton extends Planetas {
 
 	{
 		setVelDeslocamento(4); 				// this.velDeslocamento = 4;
+		setStatus(true);
 		setLimiteminX(6); 					// this.limiteminX = 9;
 		setLimitemaxX(8); 					// this.limitemaxX = 11;
 		setLimiteminY(6); 					// this.limiteminY = 9;

@@ -7,6 +7,7 @@ public class CSharp extends Planetas {
 
 	{
 		setVelDeslocamento(1);
+		setStatus(true);
 		setLimiteminX(2);
 		setLimitemaxX(12);
 		setLimiteminY(2);

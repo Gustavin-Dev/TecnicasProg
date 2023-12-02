@@ -32,24 +32,19 @@ public class PainelUniverse extends JPanel {
 		setPreferredSize(new Dimension(750, 800));
 		setLayout(new GridLayout(15, 15));
 		
-	
-
 		labels = new JLabel[15][15];
+		
 		for (int i = 0; i < 15; i++) {
 			for (int j = 0; j < 15; j++) {
 				labels[i][j] = new JLabel();
 				labels[i][j].setBorder(BorderFactory.createLineBorder(Color.BLACK));
 				labels[i][j].setOpaque(true);
-				labels[i][j].setText(i+"x"+j);
 				labels[i][j].setHorizontalAlignment(SwingConstants.CENTER);
 				add(labels[i][j]);
-				if(i == 7|| j == 7) {
-					labels[i][j].setBackground(Color.black);
-				}
 			}
 		}
 		labels[7][7].setBackground(Color.BLACK);
-//		AdcionarImagens();
+		AdcionarImagens();
 
 	}
 
@@ -78,14 +73,14 @@ public class PainelUniverse extends JPanel {
 	}
 
 	public void AdcionarImagens() {
-		ImagemJava       = new ImageIcon(getClass().getResource("imagemJAVA.png"));
-		ImagemPhyton     = new ImageIcon(getClass().getResource("imagemPHYTON.png"));
-		ImagemJavaScript = new ImageIcon(getClass().getResource("imagemJAVASCRIPT.png"));
-		ImagemRuby       = new ImageIcon(getClass().getResource("imagemRUBY.png"));
-		ImagemPhp        = new ImageIcon(getClass().getResource("imagemPHP.jpg"));
-		ImagemCSharp     = new ImageIcon(getClass().getResource("imagemC#.jpg"));
-		ImagemCPlus      = new ImageIcon(getClass().getResource("CPLUSPLUS.png"));
-		ImagemC          = new ImageIcon(getClass().getResource("imagemC.jpg"));
+		ImagemJava       = new ImageIcon(getClass().getResource("Imagens/Java.png"));
+		ImagemPhyton     = new ImageIcon(getClass().getResource("Imagens/phyton.png"));
+		ImagemJavaScript = new ImageIcon(getClass().getResource("Imagens/JavaScript.png"));
+		ImagemRuby       = new ImageIcon(getClass().getResource("Imagens/Ruby.png"));
+		ImagemPhp        = new ImageIcon(getClass().getResource("Imagens/Php.jpg"));
+		ImagemCSharp     = new ImageIcon(getClass().getResource("Imagens/C#.jpg"));
+		ImagemCPlus      = new ImageIcon(getClass().getResource("Imagens/Cplus.png"));
+		ImagemC          = new ImageIcon(getClass().getResource("Imagens/C.jpg"));
 
 		setImagem(7, 7, ImagemJava);
 		setImagem(6, 7, ImagemPhyton);
